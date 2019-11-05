@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Étienne- louis Boullée</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <style type="text/css">
+     :root{
+        --ColorTextArticleReducido: white;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+  
+        body{
+            font-size: 18px;
+        }
+        img{
+        width: 100%;
+        height: 100%;
+        }
+        header{
+            width: 100%;
+            display: flex;
+        }
+    header> div{
+        width: 50%;
+        height: 60vh;
+        position: relative;
+    }
+        header div img{
+            object-fit: cover;
+            object-position: top center;
+            height: 100%;
+        }
+   
+    .bloc_esq{
+        background: purple;
+        
+    }
+    .bloc_esq img{
+        object-fit:cover;
+        object-position: top center;
+    }
+    .bloc_dre{
+        background: pink;
+    }
+    .blo_dre img{
+        object-fit: cover;
+        object-position: center;
+    }
+    h1{ font-family: 'Anton', sans-serif;
+        position: absolute;
+        text-align: center;
+        top: 49vh;
+        width: 100%;
+        font-size: 8vw;
+        color: orange;
+        
+    }
+    h2{
+        font-family: 'Roboto', sans-serif;
+        padding: 40px 0;
+        position: absolute;
+        text-align:center;
+        top: 49vh;
+        font-size: 2vw;
+        width: 100%;
+        color: white;
+    }
+    article{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1vw;
+        width: 37.5em;
+        margin: auto;
+   }
+    article>p:first-child{
+        padding: 8vw 0;
+        color: orange;
+        column-count: 2;
+        column-gap: 30px;
+        text-align: justify;
+        hyphens: auto;
+        column-rule: 1px solid orange;
+        line-height: 1.4em;      
+    }
+    article #cos>p:first-child::first-letter{
+        color: orange;
+        font-size: 5em;
+        font-family: 'Roboto', 'san serif';
+        float: left;
+        padding-right: 0.2em;
+        padding-top: -0.4em;
+        padding-bottom: 0.3em;
+    }
+    article #cos{
+        width: auto;
+        padding: 0 3em;
+        text-align: justify;
+        hyphens: auto;
+        line-height: 1.4em;
+       
+    }
+    article #cos p{
+        padding: 0 0 1.5em 0; 
+    }
+    .circulo, .hexagono{
+        background: #fff361;
+    }
+    .circulo img, hexagono img{
+        mix-blend-mode: luminosity;
+    }
+    .circulo, .circulo img{
+        border-radius: 50%;
+    }
+    .circulo{
+        margin-left: -8em;
+        max-width: 20em;
+        float: left;
+        shape-outside:
+      shape-margin: 1em;
+        
+     }
+         .hexagono, .hexagono{
+     clip-path: polygon(48% 19%, 100% 0, 100% 76%, 47% 99%, 0% 75%, 0 0);
+        }
+       .hexagono{
+        max-width: 20em;
+        float: right;
+        margin-right: -8em;
+        shape-margin: 2em;
+        shape-outside:  polygon(48% 19%, 100% 0, 100% 76%, 47% 99%, 0% 75%, 0 0);
+    }
+    
+   
+    @media (max-width:600px){
+        body{
+            background: azure;
+            font-size: 12px;
+            color: var(--ColorTextArticleReducido);
+        }
+        h1{
+            color: orange;
+         }
+        h2{
+            color: white;
+        }
+        article>p:first-child{
+            color: orange;
+        }
+     </style>
+    </head>
+       <body>
+          <header>
+             <div class="bloc_esq">
+            <img src="img/boullee.jpg">
+            </div>
+         <div class="bloc_dre">
+         <img src="img/boulle2.jpg">
+         </div >
+         <h1>Étienne- louis Boullée</h1>    
+        <h2> visionario arquitecto francés del neoclasicismo.</h2>
+         </header>  
+          <article>
+             <p> Nacido en Francia, hijo de un arquitecto, estudió pintura pero luego se pasó a la arquitectura por petición paterna. Estudió con Jacques-François Blondel, Germain Boffrand y Jean-Laurent Le Geay, de quienes aprendió el estilo de arquitectura clásica francesa predominante en los siglos XVII y XVIII y el Neoclasicismo hacia el que evolucionó a mediados de siglo.
+             </p>
+             <div id="cos">
+             
+            <p>Entra a formar parte de la Academia real de arquitectura de París en 1762 y se convirtió en el arquitecto en jefe de Federico II el Grande de Prusia, un título en gran medida honorario. Diseñó una serie de casas particulares desde 1762 hasta 1778, aunque la mayor parte de ellas ya no existen; entre los ejemplos supervivientes destacan el Hôtel Alexandre y Hôtel de Brunoy, ambos en París. Junto a Claude Nicolas Ledoux fue una de las más influyentes figuras de la arquitectura neoclásica francesa.
+             </p>
+              <div class="circulo">
+             <img src="img/boulle4.jpg">
+              </div>
+             
+             <p>Su mayor impacto lo provocó como maestro y teórico en la École nationale des ponts et chaussées entre 1778 y 1788, desarrollando un estilo geométrico abstracto distintivo inspirado por formas clásicas. Su obra se caracterizó por la eliminación de toda la ornamentación innecesaria, hinchando las formas geométricas hasta una escala enorme y repitiendo elementos como columnas en grandes series.
+             Boullée promovió la idea de hacer arquitectura expresiva de su propósito, una doctrina que sus detractores llamaron architecture parlante («arquitectura parlante»), que fue un elemento esencial en la formación arquitectónica Beaux-Arts en el final del siglo XIX.
+             </p>
+             <div class="hexagono">
+             <img src="img/boulle3.jpg">
+             </div>
+             <p>
+             Su proyecto más célebre es el Cenotafio para Isaac Newton (1784), cuyos dibujos y esbozos se conservan en la Biblioteca Nacional de Francia. Este diseño representa uno de los iconos de la llamada arquitectura visionaria. Ejemplifica su estilo de manera destacada. El cenotafio sería una esfera de 150 metros de alto hundida en una base circular y cubierta de cipreses. Aunque la estructura no se construyó nunca, su diseño fue grabado y circuló ampliamente en círculos profesionales.
+             </p>
+              </div>
+           </article>    
+          </body>
+</html>
+        
+      
